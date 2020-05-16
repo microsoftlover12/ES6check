@@ -22,21 +22,16 @@ const petsWithAge = [];
 console.log(petsWithAge);
 
 
-const dogs = [];
-  filterdogs(){
+const dogs = filterdogs()
+  
 dogs.filter((pets => pet.type =="dog"));
 
-}
 
 
+const jasper=  filtername()
 
-const jasper= [];
-
-    filtername(){
-
-   name.filter((pets=>pet.name=="Jasper"))
-
-   }
+   name.filter((pets=>pet.name=="Jasper"));
+  
     console.log("Jasper is " + jasper.age + " years old");
   
 
