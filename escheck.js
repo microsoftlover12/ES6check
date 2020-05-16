@@ -12,31 +12,33 @@ const getAge = (pet) => {
 
 
 const petsWithAge = [];
-for (let i = 0; i < pets.length; i++) {
-    const pet = pets[i];
-    pet.age = getAge(pet);
 
-    petsWithAge.push(pet);
-}
+    
+    pet.age = getAge(pet);
+    petsWithAge.map(pet);
+
+    
+
 console.log(petsWithAge);
 
 
 const dogs = [];
-for (let i = 0; i < pets.length; i++) {
-  const pet = pets[i];
-  if (pet.type === "dog") {
-    dogs.push(pet);
-  }
+function  filterdogs(){
+dogs.filter((pets => pet.type =="dog"));
+
 }
-console.log(dogs);
 
 
-const jasper;
-for (let i = 0; i < pets.length; i++) {
-  const pet = pets[i];
-  if (pet.name === "Jasper") {
-    jasper = pet;
-  }
-}
-console.log("Jasper is " + jasper.age + " years old");
+
+const jasper= [];
+
+    function filtername(){
+
+   name.filter((pets=>pet.name=="Jasper"))
+
+   }
+    console.log("Jasper is " + jasper.age + " years old");
+  
+
+
 
