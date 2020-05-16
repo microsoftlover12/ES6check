@@ -23,7 +23,7 @@ console.log(petsWithAge);
 
 
 const dogs = [];
-function  filterdogs(){
+  filterdogs(){
 dogs.filter((pets => pet.type =="dog"));
 
 }
@@ -32,7 +32,7 @@ dogs.filter((pets => pet.type =="dog"));
 
 const jasper= [];
 
-    function filtername(){
+    filtername(){
 
    name.filter((pets=>pet.name=="Jasper"))
 
