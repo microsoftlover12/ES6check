@@ -4,35 +4,21 @@ const pets = [
     { name: "Jasper", type: "dog", bornOn: 2016 }
 ];
 
-const getAge = (pet) => {
-
-    return ('new Date ${pet},new Date().getFullYear() - pet.bornOn');
-
-}
-
-
-const petsWithAge = [];
-
-    
-    pet.age = getAge(pet);
-    petsWithAge.map(pet);
-
-    
-
-console.log(petsWithAge);
-
-
-const dogs = filterdogs()
-  
-dogs.filter((pets => pet.type =="dog"));
+const getAge = (pet) => new Date().getFullYear() - pet.bornOn
 
 
 
-const jasper=  filtername()
+pets.forEach(pet => pet.age = getAge(pet)) 
+console.log(pets);
 
-   name.filter((pets=>pet.name=="Jasper"));
-  
-    console.log("Jasper is " + jasper.age + " years old");
+
+const dogs =pets.filter(pet => pet.type =="dog");
+
+
+
+const jasper=pets.find(pet =>pet.name=="Jasper");
+
+console.log(`Jasper is ${jasper.age} years old`);
   
 
 
